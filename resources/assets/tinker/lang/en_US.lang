@@ -201,8 +201,6 @@ infitool.shuriken=Shuriken
 infitool.throwingknife=Throwing Knife
 infitool.javelin=Javelin
 
-item.tconstruct.PotionLauncher.name=Potion Launcher
-
 item.tool.randomarrow=Random Streamer
 
 item.tconstruct.Pattern.blank_pattern.name=Blank Pattern
@@ -764,7 +762,6 @@ oreberrybush6.tooltip=Tastes like Creeper
 barricade.tooltip=Stacks up to 4 times
 pattern1.tooltip=Material Cost: 
 pattern2.tooltip=Material Cost: 
-potionlauncher.tooltip=Test Item
 smeltery.controller.tooltip=Brain of the Smeltery
 smeltery.drain.tooltip1=Works both as input and output for
 smeltery.drain.tooltip2=fluids in the Smeltery

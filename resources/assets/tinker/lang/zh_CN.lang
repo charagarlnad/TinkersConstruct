@@ -199,8 +199,6 @@ infitool.shuriken=回旋镖
 infitool.throwingknife=飞刀
 infitool.javelin=标枪
 
-item.tconstruct.PotionLauncher.name=药水发射器
-
 item.tool.randomarrow=随机箭
 
 item.tconstruct.Pattern.blank_pattern.name=空白模具
@@ -762,7 +760,6 @@ oreberrybush6.tooltip=爬行者的味道
 barricade.tooltip=最多可叠加4个
 pattern1.tooltip=材料耗费: 
 pattern2.tooltip=材料耗费: 
-potionlauncher.tooltip=测试物品
 smeltery.controller.tooltip=相当于冶炼炉的大脑
 smeltery.drain.tooltip1=可以向冶炼炉
 smeltery.drain.tooltip2=输入或输出液体

@@ -199,8 +199,6 @@ infitool.shuriken=Shuriken
 infitool.throwingknife=Vrhací nůž
 infitool.javelin=Oštěp
 
-item.tconstruct.PotionLauncher.name=Lektvaromet
-
 item.tool.randomarrow=Náhodná střela
 
 item.tconstruct.Pattern.blank_pattern.name=Prázdná šablona
@@ -762,7 +760,6 @@ oreberrybush6.tooltip=Chutná jako syčák
 barricade.tooltip=Můžeš položit až 4x do jednoho místa
 pattern1.tooltip=Cena materialu: 
 pattern2.tooltip=Cena materialu: 
-potionlauncher.tooltip=Testovací věc
 smeltery.controller.tooltip=Mozek celé slévárny
 smeltery.drain.tooltip1=Funguje jako vztup i výstup
 smeltery.drain.tooltip2=pro tekutiny ve slévárně

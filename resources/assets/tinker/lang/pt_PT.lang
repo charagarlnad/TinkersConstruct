@@ -191,8 +191,6 @@ infitool.shuriken=Shuriken
 infitool.throwingknife=Faca de Arremesso
 infitool.javelin=Azagaia
 
-item.tconstruct.PotionLauncher.name=Lançador de Poção
-
 item.tool.randomarrow=Flâmula Aleatória
 
 item.tconstruct.Pattern.blank_pattern.name=Matriz em Branco
@@ -741,7 +739,6 @@ oreberrybush6.tooltip=Tem gosto de Creeper azedo
 barricade.tooltip=Acumula até 4 vezes
 pattern1.tooltip=Custo do Material: 
 pattern2.tooltip=Custo do Material: 
-potionlauncher.tooltip=Item de Teste
 smeltery.controller.tooltip=Cérebro da Fundição de Minérios
 smeltery.drain.tooltip1=Funciona tanto para entrada como para saída
 smeltery.drain.tooltip2=Flúidos na Fundição de Minérios

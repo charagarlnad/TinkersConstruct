@@ -11,12 +11,6 @@
        "little_saw"
      ]
    },
-   "launcher_clank": {
-     "category": "neutral",
-     "sounds": [
-       "launcher_clank"
-     ]
-   },
    "woodHit": {
      "category": "block",
      "sounds": [

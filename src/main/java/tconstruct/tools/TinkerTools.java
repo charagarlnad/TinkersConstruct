@@ -115,7 +115,6 @@ public class TinkerTools
     public static ToolCore cleaver;
     public static ToolCore hammer;
     public static ToolCore battleaxe;
-    public static Item potionLauncher;
     public static Item handGuard;
     public static Item crossbar;
     public static Item fullGuard;
@@ -236,9 +235,6 @@ public class TinkerTools
             GameRegistry.registerItem(tools[i], toolStrings[i]); // 1.7 compat
             TConstructRegistry.addItemToDirectory(toolStrings[i], tools[i]);
         }
-
-        TinkerTools.potionLauncher = new PotionLauncher().setUnlocalizedName("tconstruct.PotionLauncher");
-        GameRegistry.registerItem(TinkerTools.potionLauncher, "potionLauncher");
 
         //TinkerTools.pickaxeHead = new ToolPart("_pickaxe_head", "PickHead").setUnlocalizedName("tconstruct.PickaxeHead");
         TinkerTools.pickaxeHead = new DynamicToolPart("_pickaxe_head", "PickaxeHead");

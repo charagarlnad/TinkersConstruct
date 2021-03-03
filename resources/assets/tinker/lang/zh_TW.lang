@@ -162,8 +162,6 @@ item.InfiTool.Shortbow.name=短弓
 item.InfiTool.Arrow.name=箭矢
 item.InfiTool.Mattock.name=鶴嘴鋤
 
-item.InfiTool.PotionLauncher.name=藥水槍
-
 item.tool.randomarrow=隨機箭
 
 item.tconstruct.Pattern.blank_pattern.name=空白模具
@@ -692,7 +690,6 @@ oreberrybush6.tooltip=爬行者的味道
 barricade.tooltip=最多可疊加4個
 pattern1.tooltip=材料耗費: 
 pattern2.tooltip=材料耗費: 
-potionlauncher.tooltip=測試物品
 smeltery.controller.tooltip=相當於冶煉爐的大腦
 smeltery.drain.tooltip1=可以向冶煉爐
 smeltery.drain.tooltip2=輸入或輸出液體

@@ -191,8 +191,6 @@ infitool.shuriken=Shuriken
 infitool.throwingknife=Coltello da lancio
 infitool.javelin=Giavellotto
 
-item.tconstruct.PotionLauncher.name=Lanciatore di pozioni
-
 item.tool.randomarrow=Freccia casuale
 
 item.tconstruct.Pattern.blank_pattern.name=Modello
@@ -772,7 +770,6 @@ oreberrybush6.tooltip=Ha il gusto di un Creeper
 barricade.tooltip=Puoi usarne 4 alla volta
 pattern1.tooltip=Costo in materiali: 
 pattern2.tooltip=Costo in materiali: 
-potionlauncher.tooltip=Oggetto di prova
 smeltery.controller.tooltip=Il cervello della fonderia
 smeltery.drain.tooltip1=Funziona sia come entrata che come
 smeltery.drain.tooltip2=uscita per fluidi nella fonderia

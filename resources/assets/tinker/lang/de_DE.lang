@@ -199,8 +199,6 @@ infitool.shuriken=Wurfsterne
 infitool.throwingknife=Wurfmesser
 infitool.javelin=Wurfspeer
 
-item.tconstruct.PotionLauncher.name=Trankwerfer
-
 item.tool.randomarrow=Zufälliges Band
 
 item.tconstruct.Pattern.blank_pattern.name=Leere Schablone
@@ -762,7 +760,6 @@ oreberrybush6.tooltip=Schmeckt wie Creeper
 barricade.tooltip=Stapelt sich bis zu vier mal
 pattern1.tooltip=Materialkosten:
 pattern2.tooltip=Materialkosten:
-potionlauncher.tooltip=Test-Item
 smeltery.controller.tooltip=Gehirn der Schmelzerei
 smeltery.drain.tooltip1=Ist sowohl Input als auch Output
 smeltery.drain.tooltip2=für Flüssigkeiten in der Schmelzerei

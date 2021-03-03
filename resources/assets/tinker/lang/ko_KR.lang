@@ -191,8 +191,6 @@ infitool.shuriken=수리검
 infitool.throwingknife=투척용 단검
 infitool.javelin=투창
 
-item.InfiTool.PotionLauncher.name=포션 발사기
-
 item.tool.randomarrow=랜덤 스트리머
 
 item.tconstruct.Pattern.blank_pattern.name=빈 문양
@@ -754,7 +752,6 @@ oreberrybush6.tooltip=크리퍼맛
 barricade.tooltip=4개까지 꽂을 수 있음
 pattern1.tooltip=재료 소모량: 
 pattern2.tooltip=재료 소모량: 
-potionlauncher.tooltip=테스트 아이템
 smeltery.controller.tooltip=제련소의 뇌
 smeltery.drain.tooltip1=제련소 안의 액체를
 smeltery.drain.tooltip2=빼내거나 다시 집어넣을 수 있음

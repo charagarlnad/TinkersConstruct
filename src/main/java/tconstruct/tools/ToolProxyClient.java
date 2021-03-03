@@ -302,7 +302,6 @@ public class ToolProxyClient extends ToolProxyCommon
              * SoundManager soundmanager = event.manager;
              * soundmanager.addSound("tinker:frypan_hit.ogg");
              * soundmanager.addSound("tinker:little_saw.ogg");
-             * soundmanager.addSound("tinker:launcher_clank.ogg");
              * TConstruct.logger.info("Successfully loaded sounds.");
              */
         }

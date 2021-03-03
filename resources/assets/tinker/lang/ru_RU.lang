@@ -199,8 +199,6 @@ infitool.shuriken=Сюрикэн
 infitool.throwingknife=Метательный нож
 infitool.javelin=Копьё
 
-item.tconstruct.PotionLauncher.name=Метатель зелий
-
 item.tool.randomarrow=Случайный серпантин
 
 item.tconstruct.Pattern.blank_pattern.name=Пустая схема
@@ -762,7 +760,6 @@ oreberrybush6.tooltip=На вкус, как крипер
 barricade.tooltip=Укладывается в 4 предмета
 pattern1.tooltip=Стоимость материала: 
 pattern2.tooltip=Стоимость материала: 
-potionlauncher.tooltip=Тестовый предмет
 smeltery.controller.tooltip=Мозг плавильни
 smeltery.drain.tooltip1=Работает в качестве ввода и вывода
 smeltery.drain.tooltip2=жидкостей в плавильне
