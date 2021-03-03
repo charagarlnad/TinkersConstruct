@@ -26,7 +26,6 @@ import tconstruct.library.crafting.PatternBuilder;
 import tconstruct.library.modifier.IModifyable;
 import tconstruct.library.tools.*;
 import tconstruct.library.util.HarvestLevels;
-import tconstruct.mechworks.logic.TileEntityLandmine;
 import tconstruct.tools.logic.CraftingStationLogic;
 
 @Optional.Interface(iface = "codechicken.nei.api.INEIGuiHandler", modid = "NotEnoughItems")

@@ -54,7 +54,6 @@ public class ToolProxyClient extends ToolProxyCommon
         RenderingRegistry.registerBlockHandler(new FrypanRender());
         RenderingRegistry.registerBlockHandler(new BattlesignRender());
 
-        RenderingRegistry.registerEntityRenderingHandler(LaunchedPotion.class, new LaunchedItemRender(Items.potionitem, 16384));
         RenderingRegistry.registerEntityRenderingHandler(DaggerEntity.class, new DaggerEntityRenderer());
         //RenderingRegistry.registerEntityRenderingHandler(DaggerEntity.class, new DaggerRenderCustom());
         //RenderingRegistry.registerEntityRenderingHandler(ArrowEntity.class, new ArrowRenderCustom());

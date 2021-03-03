@@ -62,7 +62,7 @@ public class TinkerWorld
     public static Block barricadeSpruce;
     public static Block barricadeBirch;
     public static Block barricadeJungle;
-    public static Block slimeExplosive;
+
     public static Fluid blueSlimeFluid;
     // Slime
     public static SoundType slimeStep;
@@ -108,7 +108,6 @@ public class TinkerWorld
         TinkerWorld.barricadeSpruce = new BarricadeBlock(Blocks.log, 1).setBlockName("trap.barricade.spruce");
         TinkerWorld.barricadeBirch = new BarricadeBlock(Blocks.log, 2).setBlockName("trap.barricade.birch");
         TinkerWorld.barricadeJungle = new BarricadeBlock(Blocks.log, 3).setBlockName("trap.barricade.jungle");
-        TinkerWorld.slimeExplosive = new SlimeExplosive().setHardness(0.0F).setStepSound(Block.soundTypeGrass).setBlockName("explosive.slime");
 
         // Slime
         TinkerWorld.slimeStep = new StepSoundSlime("mob.slime", 1.0f, 1.0f);
@@ -172,7 +171,6 @@ public class TinkerWorld
         GameRegistry.registerBlock(TinkerWorld.barricadeSpruce, BarricadeItem.class, "trap.barricade.spruce");
         GameRegistry.registerBlock(TinkerWorld.barricadeBirch, BarricadeItem.class, "trap.barricade.birch");
         GameRegistry.registerBlock(TinkerWorld.barricadeJungle, BarricadeItem.class, "trap.barricade.jungle");
-        GameRegistry.registerBlock(TinkerWorld.slimeExplosive, MetadataItemBlock.class, "explosive.slime");
 
         // fluids
 
@@ -265,16 +263,10 @@ public class TinkerWorld
     {
         EntityRegistry.registerModEntity(FancyEntityItem.class, "Fancy Item", 0, TConstruct.instance, 32, 5, true);
         EntityRegistry.registerModEntity(DaggerEntity.class, "Dagger", 1, TConstruct.instance, 32, 5, true);
-        EntityRegistry.registerModEntity(Crystal.class, "Crystal", 2, TConstruct.instance, 32, 3, true);
-        EntityRegistry.registerModEntity(LaunchedPotion.class, "Launched Potion", 3, TConstruct.instance, 32, 3, true);
         EntityRegistry.registerModEntity(ArrowEntity.class, "Arrow", 4, TConstruct.instance, 32, 5, true);
-        // EntityRegistry.registerModEntity(CartEntity.class, "Small Wagon", 1,
-        // TConstruct.instance, 32, 5, true);
 
         EntityRegistry.registerModEntity(BlueSlime.class, "EdibleSlime", 12, TConstruct.instance, 64, 5, true);
         EntityRegistry.registerModEntity(KingBlueSlime.class, "KingSlime", 14, TConstruct.instance, 64, 5, true);
-        // EntityRegistry.registerModEntity(MetalSlime.class, "MetalSlime", 13,
-        // TConstruct.instance, 64, 5, true);
 
         if (PHConstruct.naturalSlimeSpawn > 0)
         {
@@ -400,10 +392,6 @@ public class TinkerWorld
         GameRegistry.addRecipe(new ItemStack(TinkerWorld.strangeFood, 4, 0), "#", '#', new ItemStack(TinkerWorld.slimeGel, 1, 0));
         GameRegistry.addRecipe(new ItemStack(TinkerWorld.slimeGel, 1, 1), "##", "##", '#', Items.slime_ball);
         GameRegistry.addRecipe(new ItemStack(Items.slime_ball, 4, 0), "#", '#', new ItemStack(TinkerWorld.slimeGel, 1, 1));
-        // slimeExplosive
-        GameRegistry.addShapelessRecipe(new ItemStack(TinkerWorld.slimeExplosive, 1, 0), Items.slime_ball, Blocks.tnt);
-        GameRegistry.addShapelessRecipe(new ItemStack(TinkerWorld.slimeExplosive, 1, 2), TinkerWorld.strangeFood, Blocks.tnt);
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TinkerWorld.slimeExplosive, 1, 0), "slimeball", Blocks.tnt));
 
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TinkerWorld.slimeChannel, 1, 0), new ItemStack(TinkerWorld.slimeGel, 1, Short.MAX_VALUE), "dustRedstone"));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TinkerWorld.bloodChannel, 1, 0), new ItemStack(TinkerWorld.strangeFood, 1, 1), new ItemStack(TinkerWorld.strangeFood, 1, 1), new ItemStack(TinkerWorld.strangeFood, 1, 1), new ItemStack(TinkerWorld.strangeFood, 1, 1), "dustRedstone"));

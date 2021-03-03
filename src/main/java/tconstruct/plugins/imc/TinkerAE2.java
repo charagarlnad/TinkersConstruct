@@ -23,7 +23,6 @@ public class TinkerAE2
         TConstruct.logger.info("AE2 detected. Registering for Spatial IO.");
 
         addtoSpatialWhitelist("tconstruct.blocks.logic.DryingRackLogic");
-        addtoSpatialWhitelist("tconstruct.mechworks.logic.TileEntityLandmine");
 
         for (String s : spatialIOSmelteryLogics)
         {

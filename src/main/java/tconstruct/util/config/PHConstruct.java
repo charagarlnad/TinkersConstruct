@@ -232,7 +232,6 @@ public class PHConstruct
     public static boolean worldModule;
     public static boolean toolModule;
     public static boolean smelteryModule;
-    public static boolean mechworksModule;
     public static boolean armorModule;
     public static boolean prayerModule;
     public static boolean cropifyModule;

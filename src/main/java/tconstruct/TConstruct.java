@@ -31,9 +31,6 @@ import tconstruct.library.TConstructCreativeTab;
 import tconstruct.library.TConstructRegistry;
 import tconstruct.library.crafting.Detailing;
 import tconstruct.library.crafting.LiquidCasting;
-import tconstruct.mechworks.TinkerMechworks;
-import tconstruct.mechworks.landmine.behavior.Behavior;
-import tconstruct.mechworks.landmine.behavior.stackCombo.SpecialStackHandler;
 import tconstruct.plugins.gears.TinkerGears;
 import tconstruct.plugins.fmp.TinkerFMP;
 import tconstruct.plugins.ic2.TinkerIC2;
@@ -145,7 +142,6 @@ public class TConstruct
         pulsar.registerPulse(new TinkerWorld());
         pulsar.registerPulse(new TinkerTools());
         pulsar.registerPulse(new TinkerSmeltery());
-        pulsar.registerPulse(new TinkerMechworks());
         pulsar.registerPulse(new TinkerArmor());
         pulsar.registerPulse(new TinkerWeaponry());
         pulsar.registerPulse(new TinkerThaumcraft());
@@ -228,8 +224,6 @@ public class TConstruct
     public void postInit (FMLPostInitializationEvent event)
     {
         packetPipeline.postInitialise();
-        Behavior.registerBuiltInBehaviors();
-        SpecialStackHandler.registerBuiltInStackHandlers();
 
         proxy.initialize();
         pulsar.postInit(event);

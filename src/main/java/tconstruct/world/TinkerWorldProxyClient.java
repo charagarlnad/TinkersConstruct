@@ -10,7 +10,6 @@ import net.minecraft.client.particle.*;
 import net.minecraft.init.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import tconstruct.mechworks.model.CartRender;
 import tconstruct.tools.TinkerTools;
 import tconstruct.world.entity.*;
 import tconstruct.world.model.*;
@@ -29,7 +28,6 @@ public class TinkerWorldProxyClient extends TinkerWorldProxyCommon
     {
         RenderingRegistry.registerBlockHandler(new OreberryRender());
         RenderingRegistry.registerBlockHandler(new BarricadeRender());
-        RenderingRegistry.registerBlockHandler(new RenderLandmine());
         RenderingRegistry.registerBlockHandler(new PunjiRender());
         RenderingRegistry.registerBlockHandler(new SlimeChannelRender());
         RenderingRegistry.registerBlockHandler(new SlimePadRender());
@@ -38,7 +36,6 @@ public class TinkerWorldProxyClient extends TinkerWorldProxyCommon
         SlimeRender slimeRender = new SlimeRender(new ModelSlime(16), new ModelSlime(0), 0.25F);
         RenderingRegistry.registerEntityRenderingHandler(BlueSlime.class, slimeRender);
         RenderingRegistry.registerEntityRenderingHandler(KingBlueSlime.class, slimeRender);
-        RenderingRegistry.registerEntityRenderingHandler(CartEntity.class, new CartRender());
 
         VillagerRegistry.instance().registerVillagerSkin(78943, new ResourceLocation("tinker", "textures/mob/villagertools.png"));
     }
