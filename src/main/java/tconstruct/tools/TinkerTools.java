@@ -236,7 +236,6 @@ public class TinkerTools
             TConstructRegistry.addItemToDirectory(toolStrings[i], tools[i]);
         }
 
-        //TinkerTools.pickaxeHead = new ToolPart("_pickaxe_head", "PickHead").setUnlocalizedName("tconstruct.PickaxeHead");
         TinkerTools.pickaxeHead = new DynamicToolPart("_pickaxe_head", "PickaxeHead");
         TinkerTools.shovelHead = new DynamicToolPart("_shovel_head", "ShovelHead");
         TinkerTools.hatchetHead = new DynamicToolPart("_axe_head", "AxeHead");
@@ -385,14 +384,6 @@ public class TinkerTools
         tool.setTagCompound(compound);
 
         TConstructRegistry.toolTab.init(tool);
-    }
-
-    //@Override
-    public int getBurnTime (ItemStack fuel)
-    {
-        if (fuel.getItem() == TinkerTools.materials && fuel.getItemDamage() == 7)
-            return 26400;
-        return 0;
     }
 
     @Handler
@@ -1020,7 +1011,7 @@ public class TinkerTools
         public static final int Paper = 9;
         public static final int Cobalt = 10;
         public static final int Ardite = 11;
-        public static final int Manyullyn = 12; // I'd still call it Manymetal --boni
+        public static final int Manyullyn = 12;
         public static final int Copper = 13;
         public static final int Bronze = 14;
         public static final int Alumite = 15;

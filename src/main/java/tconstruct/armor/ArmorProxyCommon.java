@@ -88,7 +88,6 @@ public class ArmorProxyCommon implements IGuiHandler
         TConstruct.logger.debug("Material Manual: " + stats.materialManual);
         TConstruct.logger.debug("Smeltery Manual: " + stats.smelteryManual);
         TConstruct.logger.debug("Weponary Manual: " + stats.weaponryManual);
-        TConstruct.logger.debug("BattleSign Bonus: " + stats.battlesignBonus);
         TConstruct.logger.debug("Derp Level: " + stats.derpLevel);
         int i = 0;
         for (ItemStack stack : stats.armor.inventory)

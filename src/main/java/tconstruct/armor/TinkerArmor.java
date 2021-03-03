@@ -43,17 +43,8 @@ public class TinkerArmor
 
     public static Item diamondApple;
     public static Item jerky;
-    // public static Item stonePattern;
-    // public static Item netherPattern;
     public static Block dryingRack;
     // Wearables
-    /*
-    public static Item heavyHelmet;
-    public static Item heavyChestplate;
-    public static Item heavyPants;
-    public static Item heavyBoots;
-    public static Item glove;
-    */
     public static Item knapsack;
     public static Item heartCanister;
 
@@ -90,18 +81,9 @@ public class TinkerArmor
         GameRegistry.registerItem(TinkerArmor.jerky, "jerky");
 
         // Wearables
-        // heavyHelmet = new TArmorBase(PHConstruct.heavyHelmet,
-        // 0).setUnlocalizedName("tconstruct.HeavyHelmet");
         TinkerArmor.heartCanister = new HeartCanister().setUnlocalizedName("tconstruct.canister");
-        // heavyBoots = new TArmorBase(PHConstruct.heavyBoots,
-        // 3).setUnlocalizedName("tconstruct.HeavyBoots");
-        // glove = new
-        // Glove(PHConstruct.glove).setUnlocalizedName("tconstruct.Glove");
         TinkerArmor.knapsack = new Knapsack().setUnlocalizedName("tconstruct.storage");
-        // GameRegistry.registerItem(TRepo.heavyHelmet, "heavyHelmet");
         GameRegistry.registerItem(TinkerArmor.heartCanister, "heartCanister");
-        // GameRegistry.registerItem(TRepo.heavyBoots, "heavyBoots");
-        // GameRegistry.registerItem(TRepo.glove, "glove");
         GameRegistry.registerItem(TinkerArmor.knapsack, "knapsack");
 
         LiquidCasting basinCasting = TConstruct.getBasinCasting();
@@ -146,16 +128,12 @@ public class TinkerArmor
         // Accessories
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerArmor.heartCanister, 1, 0), "##", "##", '#', "ingotAluminum"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerArmor.heartCanister, 1, 0), "##", "##", '#', "ingotAluminium"));
-        // GameRegistry.addRecipe(new ShapedOreRecipe(new
-        // ItemStack(TRepo.heartCanister, 1, 0), "##", "##", '#',
-        // "ingotNaturalAluminum"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerArmor.heartCanister, 1, 0), " # ", "#B#", " # ", '#', "ingotTin", 'B', Items.bone));
 
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerArmor.diamondApple), " d ", "d#d", " d ", 'd', "gemDiamond", '#', new ItemStack(Items.apple)));
         GameRegistry.addShapelessRecipe(new ItemStack(TinkerArmor.heartCanister, 1, 2), new ItemStack(TinkerArmor.diamondApple), new ItemStack(TinkerTools.materials, 1, 8), new ItemStack(TinkerArmor.heartCanister, 1, 0), new ItemStack(TinkerArmor.heartCanister, 1, 1));
         GameRegistry.addShapelessRecipe(new ItemStack(TinkerArmor.heartCanister, 1, 1), new ItemStack(TinkerArmor.heartCanister, 1, 3));
         GameRegistry.addShapelessRecipe(new ItemStack(TinkerArmor.heartCanister, 1, 4), new ItemStack(TinkerArmor.heartCanister, 1, 2), new ItemStack(TinkerArmor.heartCanister, 1, 3), new ItemStack(Items.golden_apple, 1, 1));
-        //GameRegistry.addShapelessRecipe(new ItemStack(heartCanister, 1, 6), new ItemStack(heartCanister, 1, 0), new ItemStack(heartCanister, 1, 4), new ItemStack(heartCanister, 1, 5));
 
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerArmor.knapsack, 1, 0), "###", "rmr", "###", '#', new ItemStack(Items.leather), 'r', new ItemStack(TinkerTools.toughRod, 1, 2), 'm', "ingotGold"));
         ItemStack aluBrass = new ItemStack(TinkerTools.materials, 1, 14);
@@ -165,7 +143,6 @@ public class TinkerArmor
 
         //Temporary recipes
         ItemStack leather = new ItemStack(Items.leather);
-        ItemStack glass = new ItemStack(Blocks.glass);
         ItemStack string = new ItemStack(Items.string);
         GameRegistry.addRecipe(new ShapedOreRecipe(travelGoggles.getDefaultItem(), "# #", "q#q", "g g", '#', leather, 'q', "blockGlass", 'g', "ingotGold"));
         GameRegistry.addRecipe(new ShapedOreRecipe(travelWings.getDefaultItem(), "g g", "i#i", "i i", '#', Items.ender_pearl, 'g', "ingotGold", 'i', "ingotBronze"));

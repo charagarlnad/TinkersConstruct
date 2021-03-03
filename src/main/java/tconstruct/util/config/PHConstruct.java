@@ -41,7 +41,6 @@ public class PHConstruct
 
         superfunWorld = config.get("Superfun", "All the world is Superfun", false).getBoolean(false);
 
-        keepHunger = config.get("Difficulty Changes", "Keep hunger on death", true).getBoolean(true);
         keepLevels = config.get("Difficulty Changes", "Keep levels on death", true).getBoolean(true);
         beginnerBook = config.get("Difficulty Changes", "Spawn beginner book", true).getBoolean(true);
         deathPenality = config.get("Difficulty Changes", "Tools lose 10% durability on death", true).getBoolean(true);
@@ -181,7 +180,6 @@ public class PHConstruct
         seaLevel = config.get("general", "Sea level", 64).getInt(64);
         tconComesFirst = config.get("general", "Always cast TConstruct ingots", true, "You will always get a TConstruct item from casting an ingot or block.").getBoolean();
 
-        enableHealthRegen = config.get("Ultra Hardcore Changes", "Passive Health Regen", true).getBoolean(true);
         goldAppleRecipe = config.get("Ultra Hardcore Changes", "Change Crafting Recipes", false, "Makes recipes for gold apples, carrots, and melon potions more expensive").getBoolean(false);
         dropPlayerHeads = config.get("Ultra Hardcore Changes", "Players drop heads on death", false).getBoolean(false);
         uhcGhastDrops = config.get("Ultra Hardcore Changes", "Change Ghast drops to Gold Ingots", false).getBoolean(false);
@@ -218,14 +216,6 @@ public class PHConstruct
         if (config.hasChanged())
             config.save();
 
-        File gt = new File(location + "/GregTech");
-        if (gt.exists())
-        {
-            File gtDyn = new File(location + "/GregTech/DynamicConfig.cfg");
-            Configuration gtConfig = new Configuration(gtDyn);
-            gtConfig.load();
-            gregtech = gtConfig.get("smelting", "tile.anvil.slightlyDamaged", false).getBoolean(false);
-        }
     }
 
     //Modules
@@ -317,7 +307,6 @@ public class PHConstruct
     public static int naturalSlimeSpawn;
 
     // Difficulty modifiers
-    public static boolean keepHunger;
     public static boolean keepLevels;
     public static boolean deathPenality;
     public static boolean alphaRegen;
@@ -359,7 +348,6 @@ public class PHConstruct
 
     public static boolean craftEndstone;
     // Ultra Hardcore modifiers
-    public static boolean enableHealthRegen;
     public static boolean goldAppleRecipe;
     public static boolean dropPlayerHeads;
     public static boolean uhcGhastDrops;
@@ -372,7 +360,6 @@ public class PHConstruct
     public static boolean superfunWorld;
     public static boolean beginnerBook;
 
-    public static boolean gregtech;
     public static boolean lavaFortuneInteraction;
 
     public static int islandRarity;
