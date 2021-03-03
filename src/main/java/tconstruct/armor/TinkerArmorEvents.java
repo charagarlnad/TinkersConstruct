@@ -27,7 +27,7 @@ public class TinkerArmorEvents
 {
 
     @SubscribeEvent
-    public void onLivingDrop (LivingDropsEvent event)
+    public void onLivingDrop(LivingDropsEvent event)
     {
         if (event.entityLiving == null)
             return;
@@ -63,7 +63,7 @@ public class TinkerArmorEvents
 
     /* Abilities */
     @SubscribeEvent
-    public void armorMineSpeed (net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed event)
+    public void armorMineSpeed(net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed event)
     {
         if(event.entityPlayer == null)
             return;
@@ -98,7 +98,7 @@ public class TinkerArmorEvents
     }
 
     @SubscribeEvent
-    public void slimefall (LivingFallEvent event)
+    public void slimeFall(LivingFallEvent event)
     {
         ItemStack boots = event.entityLiving.getEquipmentInSlot(1);
         if (boots != null && boots.getItem() instanceof IModifyable)

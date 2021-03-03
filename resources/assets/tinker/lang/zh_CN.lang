@@ -315,11 +315,6 @@ item.tconstruct.ArmorPattern.chestplate.name=胸甲铸模
 item.tconstruct.ArmorPattern.leggings.name=护腿铸模
 item.tconstruct.ArmorPattern.boots.name=靴子铸模
 
-item.tconstruct.helmetWood.name=木头盔
-item.tconstruct.chestplateWood.name=木胸甲
-item.tconstruct.leggingsWood.name=木护腿
-item.tconstruct.bootsWood.name=木靴子
-
 item.tconstruct.travelgoggles.name=旅行者护目镜
 item.tconstruct.travelvest.name=旅行者马甲
 item.tconstruct.travelwings.name=旅行者之翼
@@ -364,7 +359,6 @@ tile.trap.barricade.oak.name=橡木篱笆
 tile.trap.barricade.spruce.name=云杉木篱笆
 tile.trap.barricade.birch.name=白桦木篱笆
 tile.trap.barricade.jungle.name=丛林木篱笆
-tile.explosive.slime.name=SDX粘性炸药
 
 StorageMetals.Cobalt.name=钴块
 StorageMetals.Ardite.name=阿迪特块

@@ -315,11 +315,6 @@ item.tconstruct.ArmorPattern.chestplate.name=Moule de plastron
 item.tconstruct.ArmorPattern.leggings.name=Moule de jambières
 item.tconstruct.ArmorPattern.boots.name=Moule de bottes
 
-item.tconstruct.helmetWood.name=Casque en bois
-item.tconstruct.chestplateWood.name=Plastron en bois
-item.tconstruct.leggingsWood.name=Jambière en bois
-item.tconstruct.bootsWood.name=Bottes en bois
-
 item.tconstruct.travelgoggles.name=Lunettes du voyageur
 item.tconstruct.travelvest.name=Gilet du voyageur
 item.tconstruct.travelwings.name=Ailes du voyageur
@@ -364,7 +359,6 @@ tile.trap.barricade.oak.name=Barricade de chêne
 tile.trap.barricade.spruce.name=Barricade de sapin
 tile.trap.barricade.birch.name=Barricade de bouleau
 tile.trap.barricade.jungle.name=Barricade d'acajou
-tile.explosive.slime.name=SDX
 
 StorageMetals.Cobalt.name=Bloc de cobalt
 StorageMetals.Ardite.name=Bloc d'ardite

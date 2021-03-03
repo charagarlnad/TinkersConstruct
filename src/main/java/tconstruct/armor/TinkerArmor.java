@@ -56,12 +56,6 @@ public class TinkerArmor
     */
     public static Item knapsack;
     public static Item heartCanister;
-    // Armor - basic
-    public static Item helmetWood;
-    public static Item chestplateWood;
-    public static Item leggingsWood;
-    public static Item bootsWood;
-    public static ArmorMaterial materialWood;
 
     //Clothing - Travel Gear
     public static TravelGear travelGoggles;
@@ -111,15 +105,6 @@ public class TinkerArmor
         GameRegistry.registerItem(TinkerArmor.knapsack, "knapsack");
 
         LiquidCasting basinCasting = TConstruct.getBasinCasting();
-        TinkerArmor.materialWood = EnumHelper.addArmorMaterial("WOOD", 2, new int[] { 1, 2, 2, 1 }, 3);
-        TinkerArmor.helmetWood = new ArmorBasic(TinkerArmor.materialWood, 0, "wood").setUnlocalizedName("tconstruct.helmetWood");
-        TinkerArmor.chestplateWood = new ArmorBasic(TinkerArmor.materialWood, 1, "wood").setUnlocalizedName("tconstruct.chestplateWood");
-        TinkerArmor.leggingsWood = new ArmorBasic(TinkerArmor.materialWood, 2, "wood").setUnlocalizedName("tconstruct.leggingsWood");
-        TinkerArmor.bootsWood = new ArmorBasic(TinkerArmor.materialWood, 3, "wood").setUnlocalizedName("tconstruct.bootsWood");
-        GameRegistry.registerItem(TinkerArmor.helmetWood, "helmetWood");
-        GameRegistry.registerItem(TinkerArmor.chestplateWood, "chestplateWood");
-        GameRegistry.registerItem(TinkerArmor.leggingsWood, "leggingsWood");
-        GameRegistry.registerItem(TinkerArmor.bootsWood, "bootsWood");
         TConstructRegistry.addItemStackToDirectory("diamondApple", new ItemStack(TinkerArmor.diamondApple, 1, 0));
 
         TConstructRegistry.addItemStackToDirectory("canisterEmpty", new ItemStack(TinkerArmor.heartCanister, 1, 0));
@@ -158,17 +143,6 @@ public class TinkerArmor
 
     private void craftingTableRecipes ()
     {
-
-        // Armor Recipes
-        Object[] helm = new String[] { "www", "w w" };
-        Object[] chest = new String[] { "w w", "www", "www" };
-        Object[] pants = new String[] { "www", "w w", "w w" };
-        Object[] shoes = new String[] { "w w", "w w" };
-        GameRegistry.addRecipe(new ShapedOreRecipe(TinkerArmor.helmetWood, helm, 'w', "logWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(TinkerArmor.chestplateWood, chest, 'w', "logWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(TinkerArmor.leggingsWood, pants, 'w', "logWood"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(TinkerArmor.bootsWood, shoes, 'w', "logWood"));
-
         // Accessories
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerArmor.heartCanister, 1, 0), "##", "##", '#', "ingotAluminum"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerArmor.heartCanister, 1, 0), "##", "##", '#', "ingotAluminium"));

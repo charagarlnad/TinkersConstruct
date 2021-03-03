@@ -306,11 +306,6 @@ item.tconstruct.ArmorPattern.chestplate.name=Molde do Peitoral
 item.tconstruct.ArmorPattern.leggings.name=Molde de Calças
 item.tconstruct.ArmorPattern.boots.name=Molde de Botas
 
-item.tconstruct.helmetWood.name=Elmo de Madeira
-item.tconstruct.chestplateWood.name=Peitoral de Madeira
-item.tconstruct.leggingsWood.name=Calça de Madeira
-item.tconstruct.bootsWood.name=Botas de Madeira
-
 item.tconstruct.travelgoggles.name=Óculos do Viajante
 item.tconstruct.travelvest.name=Vestes do Viajante
 item.tconstruct.travelwings.name=Asas do Viajante
@@ -355,7 +350,6 @@ tile.trap.barricade.oak.name=Barricada de Carvalho
 tile.trap.barricade.spruce.name=Barricada de Pinheiro
 tile.trap.barricade.birch.name=Barricada de Eucalípito
 tile.trap.barricade.jungle.name=Barricada de Árvore da Selva
-tile.explosive.slime.name=SDX
 
 StorageMetals.Cobalt.name=Bloco de Cobalto
 StorageMetals.Ardite.name=Bloco de Ardite

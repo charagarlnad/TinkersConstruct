@@ -306,11 +306,6 @@ item.tconstruct.ArmorPattern.chestplate.name=チェストプレートの鋳型
 item.tconstruct.ArmorPattern.leggings.name=木のレギンス
 item.tconstruct.ArmorPattern.boots.name=木のブーツ
 
-item.tconstruct.helmetWood.name=木のヘルメット
-item.tconstruct.chestplateWood.name=木のチェストプレート
-item.tconstruct.leggingsWood.name=木のレギンス
-item.tconstruct.bootsWood.name=木のブーツ
-
 item.tconstruct.travelgoggles.name=Traveller's Goggles
 item.tconstruct.travelvest.name=Traveller's Vest
 item.tconstruct.travelwings.name=Traveller's Wings
@@ -355,7 +350,6 @@ tile.trap.barricade.oak.name=オークのバリケード
 tile.trap.barricade.spruce.name=松のバリケード
 tile.trap.barricade.birch.name=白樺のバリケード
 tile.trap.barricade.jungle.name=ジャングルの木のバリケード
-tile.explosive.slime.name=SDX
 
 StorageMetals.Cobalt.name=コバルトブロック
 StorageMetals.Ardite.name=アーダイトブロック

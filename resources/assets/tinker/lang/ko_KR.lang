@@ -307,11 +307,6 @@ item.tconstruct.ArmorPattern.chestplate.name=갑옷 주형
 item.tconstruct.ArmorPattern.leggings.name=레깅스 주형
 item.tconstruct.ArmorPattern.boots.name=부츠 주형
 
-item.tconstruct.helmetWood.name=나무 투구
-item.tconstruct.chestplateWood.name=나무 갑옷
-item.tconstruct.leggingsWood.name=나무 레깅스
-item.tconstruct.bootsWood.name=나무 부츠
-
 item.tconstruct.travelgoggles.name=여행자의 고글
 item.tconstruct.travelvest.name=여행자의 조끼
 item.tconstruct.travelwings.name=여행자의 날개
@@ -356,7 +351,6 @@ tile.trap.barricade.oak.name=참나무 바리케이드
 tile.trap.barricade.spruce.name=가문비나무 바리케이드
 tile.trap.barricade.birch.name=자작나무 바리케이드
 tile.trap.barricade.jungle.name=정글 나무 바리케이드
-tile.explosive.slime.name=SDX
 
 StorageMetals.Cobalt.name=코발트 블럭
 StorageMetals.Ardite.name=아르다이트 블럭

@@ -54,7 +54,6 @@ public class TinkerWorld
     public static Item strangeFood;
     // Decoration
     public static Block stoneTorch;
-    public static Block stoneLadder;
     public static Block meatBlock;
     public static Block woolSlab1;
     public static Block woolSlab2;
@@ -81,8 +80,6 @@ public class TinkerWorld
     public static OreberryBush oreBerry;
     public static OreberryBush oreBerrySecond;
     public static Item oreBerries;
-    // Rail-related
-    public static Block woodenRail;
     // Chest hooks
     public static ChestGenHooks tinkerHouseChest;
     public static ChestGenHooks tinkerHousePatterns;
@@ -131,7 +128,6 @@ public class TinkerWorld
 
         // Decoration
         TinkerWorld.stoneTorch = new StoneTorch().setBlockName("decoration.stonetorch");
-        TinkerWorld.stoneLadder = new StoneLadder().setBlockName("decoration.stoneladder");
         TinkerTools.multiBrick = new MultiBrick().setBlockName("Decoration.Brick");
         TinkerTools.multiBrickFancy = new MultiBrickFancy().setBlockName("Decoration.BrickFancy");
         TinkerTools.multiBrickMetal = new MultiBrickMetal().setBlockName("Decoration.BrickMetal");
@@ -157,8 +153,6 @@ public class TinkerWorld
         TinkerWorld.oreGravel.setHarvestLevel("shovel", 1, 3);
         TinkerWorld.oreGravel.setHarvestLevel("shovel", 1, 4);
         TinkerWorld.oreGravel.setHarvestLevel("shovel", 4, 5);
-        // Rail
-        TinkerWorld.woodenRail = new WoodRail().setStepSound(Block.soundTypeWood).setCreativeTab(TConstructRegistry.blockTab).setBlockName("rail.wood");
 
         GameRegistry.registerBlock(TinkerWorld.meatBlock, HamboneItemBlock.class, "MeatBlock");
         OreDictionary.registerOre("hambone", new ItemStack(TinkerWorld.meatBlock));
@@ -191,7 +185,6 @@ public class TinkerWorld
 
         // Decoration
         GameRegistry.registerBlock(TinkerWorld.stoneTorch, "decoration.stonetorch");
-        GameRegistry.registerBlock(TinkerWorld.stoneLadder, "decoration.stoneladder");
         GameRegistry.registerBlock(TinkerTools.multiBrick, MultiBrickItem.class, "decoration.multibrick");
         GameRegistry.registerBlock(TinkerTools.multiBrickFancy, MultiBrickFancyItem.class, "decoration.multibrickfancy");
         GameRegistry.registerBlock(TinkerTools.multiBrickMetal, MultiBrickMetalItem.class, "decoration.multibrickmetal");
@@ -201,9 +194,6 @@ public class TinkerWorld
         GameRegistry.registerBlock(TinkerWorld.oreBerrySecond, OreberryBushSecondItem.class, "ore.berries.two");
         GameRegistry.registerBlock(TinkerWorld.oreSlag, MetalOreItemBlock.class, "SearedBrick");
         GameRegistry.registerBlock(TinkerWorld.oreGravel, GravelOreItem.class, "GravelOre");
-
-        // Rail
-        GameRegistry.registerBlock(TinkerWorld.woodenRail, "rail.wood");
 
         //Items
         goldHead = new GoldenHead(4, 1.2F, false).setAlwaysEdible().setPotionEffect(Potion.regeneration.id, 10, 0, 1.0F).setUnlocalizedName("goldenhead");
@@ -352,10 +342,6 @@ public class TinkerWorld
         GameRegistry.addRecipe(new ItemStack(Blocks.lit_pumpkin, 1, 0), "p", "s", 'p', new ItemStack(Blocks.pumpkin), 's', new ItemStack(TinkerWorld.stoneTorch));
         // Stone Torch Recipe
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerWorld.stoneTorch, 4), "p", "w", 'p', new ItemStack(Items.coal, 1, Short.MAX_VALUE), 'w', "rodStone"));
-        // Stone Ladder Recipe
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerWorld.stoneLadder, 3), "w w", "www", "w w", 'w', "rodStone"));
-        // Wooden Rail Recipe
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TinkerWorld.woodenRail, 4, 0), "b b", "bxb", "b b", 'b', "plankWood", 'x', "stickWood"));
         // Stonesticks Recipes
         GameRegistry.addRecipe(new ItemStack(TinkerTools.toolRod, 4, 1), "c", "c", 'c', new ItemStack(Blocks.stone));
         GameRegistry.addRecipe(new ItemStack(TinkerTools.toolRod, 2, 1), "c", "c", 'c', new ItemStack(Blocks.cobblestone));

@@ -315,11 +315,6 @@ item.tconstruct.ArmorPattern.chestplate.name=Brustpanzergussform
 item.tconstruct.ArmorPattern.leggings.name=Beinschutzgussform
 item.tconstruct.ArmorPattern.boots.name=Stiefelgussform
 
-item.tconstruct.helmetWood.name=Holzhelm
-item.tconstruct.chestplateWood.name=Holzbrustpanzer
-item.tconstruct.leggingsWood.name=Holzbeinschutz
-item.tconstruct.bootsWood.name=Holzstiefel
-
 item.tconstruct.travelgoggles.name=Brille des Reisenden
 item.tconstruct.travelvest.name=Weste des Reisenden
 item.tconstruct.travelwings.name=Flügel des Reisenden
@@ -364,7 +359,6 @@ tile.trap.barricade.oak.name=Eichen-Barrikade
 tile.trap.barricade.spruce.name=Fichten-Barrikade
 tile.trap.barricade.birch.name=Birken-Barrikade
 tile.trap.barricade.jungle.name=Tropen-Barrikade
-tile.explosive.slime.name=SDX
 
 StorageMetals.Cobalt.name=Cobaltblock
 StorageMetals.Ardite.name=Arditblock

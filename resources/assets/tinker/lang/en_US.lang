@@ -317,11 +317,6 @@ item.tconstruct.ArmorPattern.chestplate.name=Chestplate Cast
 item.tconstruct.ArmorPattern.leggings.name=Leggings Cast
 item.tconstruct.ArmorPattern.boots.name=Boots Cast
 
-item.tconstruct.helmetWood.name=Wooden Helmet
-item.tconstruct.chestplateWood.name=Wooden Chestplate
-item.tconstruct.leggingsWood.name=Wooden Leggings
-item.tconstruct.bootsWood.name=Wooden Boots
-
 item.tconstruct.travelgoggles.name=Traveller's Goggles
 item.tconstruct.travelvest.name=Traveller's Vest
 item.tconstruct.travelwings.name=Traveller's Wings
@@ -366,7 +361,6 @@ tile.trap.barricade.oak.name=Oak Barricade
 tile.trap.barricade.spruce.name=Spruce Barricade
 tile.trap.barricade.birch.name=Birch Barricade
 tile.trap.barricade.jungle.name=Jungle Barricade
-tile.explosive.slime.name=SDX
 
 StorageMetals.Cobalt.name=Block of Cobalt
 StorageMetals.Ardite.name=Block of Ardite

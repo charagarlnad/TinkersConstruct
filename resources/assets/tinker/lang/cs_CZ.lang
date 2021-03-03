@@ -315,11 +315,6 @@ item.tconstruct.ArmorPattern.chestplate.name=Odlitek brnění
 item.tconstruct.ArmorPattern.leggings.name=Odlitek kalhot
 item.tconstruct.ArmorPattern.boots.name=Odlitek bot
 
-item.tconstruct.helmetWood.name=Dřevěná helma
-item.tconstruct.chestplateWood.name=Děvěné brnění
-item.tconstruct.leggingsWood.name=Dřevěné kalhoty
-item.tconstruct.bootsWood.name=Dřevěné boty
-
 item.tconstruct.travelgoggles.name=Cestovatelské brýle
 item.tconstruct.travelvest.name=Cestovatelská vesta
 item.tconstruct.travelwings.name=Cestovatelské křídla
@@ -364,7 +359,6 @@ tile.trap.barricade.oak.name=Dubová barikáda
 tile.trap.barricade.spruce.name=Smrková barikáda
 tile.trap.barricade.birch.name=Břízová barikáda
 tile.trap.barricade.jungle.name=Sekvojová barikáda
-tile.explosive.slime.name=SDX
 
 StorageMetals.Cobalt.name=Blok kobaltu
 StorageMetals.Ardite.name=Blok arditu

@@ -306,11 +306,6 @@ item.tconstruct.ArmorPattern.chestplate.name=Stampo per corazza
 item.tconstruct.ArmorPattern.leggings.name=Stampo per gambiera
 item.tconstruct.ArmorPattern.boots.name=Stampo per stivali
 
-item.tconstruct.helmetWood.name=Elmo di legno
-item.tconstruct.chestplateWood.name=Corazza di legno
-item.tconstruct.leggingsWood.name=Gambiera di legno
-item.tconstruct.bootsWood.name=Stivali di legno
-
 item.tconstruct.travelgoggles.name=Occhiali del viaggiatore
 item.tconstruct.travelvest.name=Veste del viaggiatore
 item.tconstruct.travelwings.name=Ali del viaggiatore
@@ -355,7 +350,6 @@ tile.trap.barricade.oak.name=Barricata di quercia
 tile.trap.barricade.spruce.name=Barricata di abete
 tile.trap.barricade.birch.name=Barricata di betulla
 tile.trap.barricade.jungle.name=Barricata di mogano
-tile.explosive.slime.name=Tritolo gelatinoso
 
 StorageMetals.Cobalt.name=Blocco di cobalto
 StorageMetals.Ardite.name=Blocco di ardite

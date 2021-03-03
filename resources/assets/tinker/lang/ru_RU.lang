@@ -315,11 +315,6 @@ item.tconstruct.ArmorPattern.chestplate.name=Слепок кирасы
 item.tconstruct.ArmorPattern.leggings.name=Слепок понож
 item.tconstruct.ArmorPattern.boots.name=Слепок ботинок
 
-item.tconstruct.helmetWood.name=Деревянный шлем
-item.tconstruct.chestplateWood.name=Деревянная кираса
-item.tconstruct.leggingsWood.name=Деревянные поножи
-item.tconstruct.bootsWood.name=Деревянные ботинки
-
 item.tconstruct.travelgoggles.name=Очки путешественника
 item.tconstruct.travelvest.name=Жилет путешественника
 item.tconstruct.travelwings.name=Крылья путешественника
@@ -364,7 +359,6 @@ tile.trap.barricade.oak.name=Баррикада из дуба
 tile.trap.barricade.spruce.name=Баррикада из ели
 tile.trap.barricade.birch.name=Баррикада из берёзы
 tile.trap.barricade.jungle.name=Баррикада из тропического дерева
-tile.explosive.slime.name=Бомба из слизи
 
 StorageMetals.Cobalt.name=Кобальтовый блок
 StorageMetals.Ardite.name=Ардитовый блок
