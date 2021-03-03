@@ -13,7 +13,7 @@ public class TinkerAE2
     private static List<String> spatialIOLogics = Arrays.asList("EssenceExtractorLogic", "GolemPedestalLogic", //TODO What happened to these?
             "MultiServantLogic"); //TODO Should Mantle handle this?
 
-    private static List<String> spatialIOSmelteryLogics = Arrays.asList("AdaptiveSmelteryLogic", "AqueductLogic", "CastingBasinLogic", "CastingChannelLogic", "CastingTableLogic", "FaucetLogic", "LavaTankLogic", "SmelteryDrainLogic", "SmelteryLogic", "TankAirLogic", "TowerFurnaceLogic");
+    private static List<String> spatialIOSmelteryLogics = Arrays.asList("AdaptiveSmelteryLogic", "AqueductLogic", "CastingBasinLogic", "CastingChannelLogic", "CastingTableLogic", "FaucetLogic", "LavaTankLogic", "SmelteryDrainLogic", "SmelteryLogic", "TowerFurnaceLogic");
 
     private static List<String> spatialIOToolLogics = Arrays.asList("CraftingStationLogic", "FrypanLogic", "PartBuilderLogic", "PatternChestLogic", "StencilTableLogic", "ToolForgeLogic", "ToolStationLogic");
 

@@ -4,7 +4,6 @@ import java.io.InputStream;
 import java.text.DecimalFormat;
 import javax.xml.parsers.*;
 
-import mantle.client.SmallFontRenderer;
 import mantle.lib.client.MantleClientRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderItem;
@@ -21,21 +20,8 @@ import tconstruct.tools.items.ManualInfo;
 public class TProxyClient extends TProxyCommon {
     public static DecimalFormat df = new DecimalFormat("##.#");
 
-    /* TODO: Split this class up into its respective parts */
-    public static SmallFontRenderer smallFontRenderer;
-    public static IIcon metalBall;
-    public static Minecraft mc;
-    public static RenderItem itemRenderer = new RenderItem();
-
     public void initialize() {
-        registerRenderer();
         readManuals();
-    }
-
-    /* Registers any rendering code. */
-    public void registerRenderer() {
-        Minecraft mc = Minecraft.getMinecraft();
-        smallFontRenderer = new SmallFontRenderer(mc.gameSettings, new ResourceLocation("textures/font/ascii.png"), mc.renderEngine, false);
     }
 
     public static Document diary;
@@ -62,8 +48,6 @@ public class TProxyClient extends TProxyCommon {
         weaponry = weaponry_cl != null ? weaponry_cl : readManual("/assets/tinker/manuals/en_US/weaponry.xml", dbFactory);
 
         initManualIcons();
-        initManualRecipes();
-        initManualPages();
         manualData = new ManualInfo();
     }
 
@@ -94,32 +78,6 @@ public class TProxyClient extends TProxyCommon {
         MantleClientRegistry.registerManualIcon("bone", new ItemStack(Items.bone));
         MantleClientRegistry.registerManualIcon("obsidian", new ItemStack(Blocks.obsidian));
         MantleClientRegistry.registerManualIcon("netherrack", new ItemStack(Blocks.netherrack));
-    }
-
-    public void initManualRecipes() {
-    }
-
-    void initManualPages() {
-
-    }
-
-    public static Document getManualFromStack(ItemStack stack) {
-        switch (stack.getItemDamage()) {
-            case 0:
-                return volume1;
-            case 1:
-                return volume2;
-            case 2:
-                return smelter;
-            case 3:
-                return diary;
-        }
-
-        return null;
-    }
-
-    public void recalculateHealth() {
-        ArmorProxyClient.armorExtended.recalculateHealth(mc.thePlayer, TPlayerStats.get(mc.thePlayer));
     }
 
 }

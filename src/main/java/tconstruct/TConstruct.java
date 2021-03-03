@@ -33,16 +33,13 @@ import tconstruct.library.crafting.Detailing;
 import tconstruct.library.crafting.LiquidCasting;
 import tconstruct.plugins.gears.TinkerGears;
 import tconstruct.plugins.fmp.TinkerFMP;
-import tconstruct.plugins.ic2.TinkerIC2;
 import tconstruct.plugins.imc.TinkerAE2;
-import tconstruct.plugins.imc.TinkerBuildCraft;
 import tconstruct.plugins.imc.TinkerMystcraft;
 import tconstruct.plugins.TinkerThaumcraft;
 import tconstruct.plugins.imc.TinkerRfTools;
 import tconstruct.plugins.mfr.TinkerMFR;
 import tconstruct.plugins.te4.TinkerTE4;
 import tconstruct.plugins.te4.TinkersThermalFoundation;
-import tconstruct.plugins.ubc.TinkerUBC;
 import tconstruct.plugins.waila.TinkerWaila;
 import tconstruct.smeltery.TinkerSmeltery;
 import tconstruct.tools.TinkerTools;
@@ -80,8 +77,7 @@ import java.util.Random;
                 "after:DynamicSkillsAPI;" +
                 "after:NotEnoughItems;" +
                 "after:Waila;" +
-                "before:GalacticraftCore;" +
-                "before:UndergroundBiomes"
+                "before:GalacticraftCore"
                 )
 public class TConstruct
 {
@@ -146,19 +142,14 @@ public class TConstruct
         pulsar.registerPulse(new TinkerWeaponry());
         pulsar.registerPulse(new TinkerThaumcraft());
         pulsar.registerPulse(new TinkerWaila());
-        pulsar.registerPulse(new TinkerBuildCraft());
         pulsar.registerPulse(new TinkerAE2());
-        pulsar.registerPulse(new TinkerIC2());
         pulsar.registerPulse(new TinkerMystcraft());
         pulsar.registerPulse(new TinkerMFR());
         pulsar.registerPulse(new TinkerTE4());
         pulsar.registerPulse(new TinkersThermalFoundation());
         pulsar.registerPulse(new TinkerFMP());
-        pulsar.registerPulse(new TinkerUBC());
         pulsar.registerPulse(new TinkerGears());
         pulsar.registerPulse(new TinkerRfTools());
-        /*pulsar.registerPulse(new TinkerPrayers());
-        pulsar.registerPulse(new TinkerCropify());*/
 
         TConstructRegistry.materialTab = new TConstructCreativeTab("TConstructMaterials");
         TConstructRegistry.toolTab = new TConstructCreativeTab("TConstructTools");
@@ -171,10 +162,7 @@ public class TConstruct
         basinCasting = new LiquidCasting();
         chiselDetailing = new Detailing();
 
-        //GameRegistry.registerFuelHandler(content);
-
         playerTracker = new TPlayerHandler();
-        // GameRegistry.registerPlayerTracker(playerTracker);
         FMLCommonHandler.instance().bus().register(playerTracker);
         MinecraftForge.EVENT_BUS.register(playerTracker);
         NetworkRegistry.INSTANCE.registerGuiHandler(TConstruct.instance, proxy);
@@ -209,10 +197,6 @@ public class TConstruct
     public void init (FMLInitializationEvent event)
     {
         packetPipeline.initalise();
-        if (event.getSide() == Side.CLIENT)
-        {
-            //MinecraftForge.EVENT_BUS.register(new EventCloakRender());
-        }
 
         DimensionBlacklist.getBadBimensions();
         GameRegistry.registerWorldGenerator(new SlimeIslandGen(TinkerWorld.slimePool, 2), 2);
@@ -268,12 +252,4 @@ public class TConstruct
     public static LiquidCasting basinCasting;
     public static Detailing chiselDetailing;
 
-    @Mod.EventHandler
-    public void missingMapping(FMLMissingMappingsEvent event) {
-        // this will be called because the air-block got removed
-        for(FMLMissingMappingsEvent.MissingMapping mapping : event.get()) {
-            if(mapping.name.equals("TConstruct:TankAir"))
-                mapping.ignore();
-        }
-    }
 }

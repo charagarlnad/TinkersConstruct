@@ -38,7 +38,6 @@ public class TitleIcon extends Item
     public void registerIcons (IIconRegister iconRegister)
     {
         ToolCore.blankSprite = iconRegister.registerIcon("tinker:blanksprite");
-        TProxyClient.metalBall = iconRegister.registerIcon("tinker:metalball");
         itemIcon = iconRegister.registerIcon("tinker:tparts");
         for (int i = 0; i < achievementIcons.length; i++)
         {
