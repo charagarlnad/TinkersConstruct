@@ -49,31 +49,6 @@ public class FryingPan extends Weapon
     }
 
     @Override
-    public void getSubItems (Item id, CreativeTabs tab, List list)
-    {
-        super.getSubItems(id, tab, list);
-
-        Item accessory = getAccessoryItem();
-        ItemStack tool = ToolBuilder.instance.buildTool(new ItemStack(getHeadItem(), 1, 2), new ItemStack(getHandleItem(), 1, 16), null, StatCollector.translateToLocal("tool.baneofpigs"));
-
-        NBTTagCompound tags = tool.getTagCompound().getCompoundTag("InfiTool");
-        tags.setBoolean("Special", true);
-        tags.setInteger("Modifiers", 0);
-        tags.setInteger("Attack", Integer.MAX_VALUE / 100);
-        tags.setInteger("TotalDurability", Integer.MAX_VALUE / 100);
-        tags.setInteger("BaseDurability", Integer.MAX_VALUE / 100);
-        tags.setInteger("MiningSpeed", Integer.MAX_VALUE / 100);
-
-        int[] keyPair = new int[] { Integer.MAX_VALUE / 100, 0, 0 };
-        tags.setIntArray("Blaze", keyPair);
-        tags.setInteger("Necrotic", Integer.MAX_VALUE / 100);
-        tags.setInteger("Effect1", 7);
-
-        tags.setBoolean("Built", true);
-        list.add(tool);
-    }
-
-    @Override
     public boolean onItemUse (ItemStack stack, EntityPlayer player, World world, int x, int y, int z, int side, float clickX, float clickY, float clickZ)
     {
         if (side == 0 || !player.isSneaking())

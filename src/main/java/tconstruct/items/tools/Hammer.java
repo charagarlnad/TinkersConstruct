@@ -144,28 +144,6 @@ public class Hammer extends AOEHarvestTool
     }
 
     @Override
-    public void getSubItems (Item id, CreativeTabs tab, List list)
-    {
-        super.getSubItems(id, tab, list);
-
-        ItemStack tool = ToolBuilder.instance.buildTool(new ItemStack(getHeadItem(), 1, 10), new ItemStack(getHandleItem(), 1, 8), new ItemStack(getAccessoryItem(), 1, 11), new ItemStack(getExtraItem(), 1, 11), StatCollector.translateToLocal("tool.infiminer"));
-
-        NBTTagCompound tags = tool.getTagCompound().getCompoundTag("InfiTool");
-        tags.setBoolean("Special", true);
-        tags.setInteger("Modifiers", 0);
-        tags.setInteger("Attack", Integer.MAX_VALUE / 100);
-        tags.setInteger("TotalDurability", Integer.MAX_VALUE / 100);
-        tags.setInteger("BaseDurability", Integer.MAX_VALUE / 100);
-        tags.setInteger("MiningSpeed", Integer.MAX_VALUE / 100);
-        tags.setInteger("Unbreaking", 10);
-
-        tags.setBoolean("Built", true);
-        list.add(tool);
-    }
-
-
-
-    @Override
     public float breakSpeedModifier ()
     {
         return 0.4f;

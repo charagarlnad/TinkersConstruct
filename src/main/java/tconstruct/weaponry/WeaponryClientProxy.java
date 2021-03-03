@@ -58,8 +58,6 @@ public class WeaponryClientProxy extends WeaponryCommonProxy {
 
         MinecraftForgeClient.registerItemRenderer(TinkerWeaponry.arrowAmmo, renderer);
         MinecraftForgeClient.registerItemRenderer(TinkerWeaponry.boltAmmo, renderer);
-
-        //MinecraftForgeClient.registerItemRenderer(TinkerWeaponry.boneana, );
     }
 
     private void registerEntityRendering()
