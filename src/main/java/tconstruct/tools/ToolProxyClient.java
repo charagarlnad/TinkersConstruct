@@ -293,26 +293,6 @@ public class ToolProxyClient extends ToolProxyCommon
         return null;
     }
 
-    @SubscribeEvent
-    public void onSound (SoundLoadEvent event)
-    {
-        try
-        {
-            /*
-             * SoundManager soundmanager = event.manager;
-             * soundmanager.addSound("tinker:frypan_hit.ogg");
-             * soundmanager.addSound("tinker:little_saw.ogg");
-             * TConstruct.logger.info("Successfully loaded sounds.");
-             */
-        }
-        catch (Exception e)
-        {
-            TConstruct.logger.error("Failed to register one or more sounds");
-        }
-
-        MinecraftForge.EVENT_BUS.unregister(this);
-    }
-
     void addStencilButtons ()
     {
         int[][] icons = { { 0, 3 }, // tool rod
