@@ -23,6 +23,9 @@ import net.minecraftforge.event.entity.living.*;
 import net.minecraftforge.event.entity.player.PlayerDropsEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import tconstruct.TConstruct;
+import tconstruct.armor.ArmorProxyClient;
+import tconstruct.armor.TinkerArmor;
+import tconstruct.client.ArmorControls;
 import tconstruct.library.tools.AbilityHelper;
 import tconstruct.tools.TinkerTools;
 import tconstruct.util.config.PHConstruct;
@@ -30,8 +33,7 @@ import tconstruct.util.config.PHConstruct;
 //TODO: Redesign this class
 public class TPlayerHandler
 {
-    /* Player */
-    // public int hunger;
+    ArmorControls controlInstance = ((ArmorProxyClient) TinkerArmor.proxy).controlInstance;
 
     private ConcurrentHashMap<UUID, TPlayerStats> playerStats = new ConcurrentHashMap<UUID, TPlayerStats>();
 
@@ -95,18 +97,11 @@ public class TPlayerHandler
         stats.init(entityplayer, entityplayer.worldObj);
         stats.armor.recalculateHealth(entityplayer, stats);
 
-        /*
-         * TFoodStats food = new TFoodStats(); entityplayer.foodStats = food;
-         */
-
         if (PHConstruct.keepLevels)
             entityplayer.experienceLevel = stats.level;
 
-        Side side = FMLCommonHandler.instance().getEffectiveSide();
-        if (side == Side.CLIENT)
-        {
-            // TProxyClient.controlInstance.resetControls();
-        }
+        if (FMLCommonHandler.instance().getEffectiveSide() == Side.CLIENT)
+            controlInstance.resetControls();
     }
 
     @SubscribeEvent

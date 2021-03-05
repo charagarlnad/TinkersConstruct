@@ -59,12 +59,6 @@ public class TinkerWorldProxyClient extends TinkerWorldProxyCommon
 
         MantleClientRegistry.registerManualSmallRecipe("graveyardsoil", graveyardsoil, new ItemStack(Blocks.dirt), new ItemStack(Items.rotten_flesh), new ItemStack(Items.dye, 1, 15), null);
         MantleClientRegistry.registerManualFurnaceRecipe("consecratedsoil", consecratedsoil, graveyardsoil);
-
-        // Traps
-        ItemStack reed = new ItemStack(Items.reeds);
-        MantleClientRegistry.registerManualLargeRecipe("punji", new ItemStack(TinkerWorld.punji, 5), reed, null, reed, null, reed, null, reed, null, reed);
-        MantleClientRegistry.registerManualSmallRecipe("barricade", new ItemStack(TinkerWorld.barricadeOak), null, log, null, log);
-
     }
 
     Minecraft mc = Minecraft.getMinecraft();

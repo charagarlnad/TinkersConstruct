@@ -833,8 +833,6 @@ public class TinkerSmeltery
         // Ore
         Smeltery.addMelting(Blocks.iron_ore, 0, 600, new FluidStack(TinkerSmeltery.moltenIronFluid, TConstruct.ingotLiquidValue * 2));
         Smeltery.addMelting(Blocks.gold_ore, 0, 400, new FluidStack(TinkerSmeltery.moltenGoldFluid, TConstruct.ingotLiquidValue * 2));
-        Smeltery.addMelting(TinkerWorld.oreGravel, 0, 600, new FluidStack(TinkerSmeltery.moltenIronFluid, TConstruct.ingotLiquidValue * 2));
-        Smeltery.addMelting(TinkerWorld.oreGravel, 1, 400, new FluidStack(TinkerSmeltery.moltenGoldFluid, TConstruct.ingotLiquidValue * 2));
 
         // Blocks
         Smeltery.addMelting(Blocks.iron_block, 0, 600, new FluidStack(TinkerSmeltery.moltenIronFluid, TConstruct.ingotLiquidValue * 9));

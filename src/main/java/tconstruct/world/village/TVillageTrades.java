@@ -25,11 +25,6 @@ public class TVillageTrades implements IVillageTradeHandler
         allowedIngredients.add(new ItemStack(Blocks.sticky_piston, 64));
 
         // tconstruct blocks
-        allowedIngredients.add(new ItemStack(TinkerWorld.barricadeBirch, 64));
-        allowedIngredients.add(new ItemStack(TinkerWorld.barricadeJungle, 64));
-        allowedIngredients.add(new ItemStack(TinkerWorld.barricadeOak, 64));
-        allowedIngredients.add(new ItemStack(TinkerWorld.barricadeSpruce, 64));
-        allowedIngredients.add(new ItemStack(TinkerWorld.punji, 64));
         allowedIngredients.add(new ItemStack(TinkerTools.toolStationWood, 3, 0));
         allowedIngredients.add(new ItemStack(TinkerTools.toolStationWood, 3, 1));
         allowedIngredients.add(new ItemStack(TinkerTools.toolStationWood, 3, 5));

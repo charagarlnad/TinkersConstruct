@@ -51,13 +51,10 @@ public class TinkerArmorEvents
                     return;
 
             int count = event.entityLiving instanceof EntityDragon ? 5 : 1;
-            for (int i = 0; i < count; i++)
-            {
-                ItemStack dropStack = new ItemStack(TinkerArmor.heartCanister, 1, 3);
-                EntityItem entityitem = new EntityItem(event.entityLiving.worldObj, event.entityLiving.posX, event.entityLiving.posY, event.entityLiving.posZ, dropStack);
-                entityitem.delayBeforeCanPickup = 10;
-                event.drops.add(entityitem);
-            }
+            ItemStack dropStack = new ItemStack(TinkerArmor.heartCanister, count, 3);
+            EntityItem entityitem = new EntityItem(event.entityLiving.worldObj, event.entityLiving.posX, event.entityLiving.posY, event.entityLiving.posZ, dropStack);
+            entityitem.delayBeforeCanPickup = 10;
+            event.drops.add(entityitem);
         }
     }
 
